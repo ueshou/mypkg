@@ -13,4 +13,48 @@ ROS_VERSION:noetic
 
 ---
 
+# インストール方法
 
+動作させるワークスペースのsrcフォルダで以下のコマンドを実行してください。  
+
+```sh
+$ git clone https://github.com/ueshou/mypkg.git  
+```
+
+その後ワークスペースに戻り、以下のコマンドでmakeしてください。
+
+```sh
+$ catkin_make  
+```
+
+---
+
+# 実行
+
+makeが終わった後、以下のコマンドで実行してください。
+
+```sh
+端末1$ roscore
+端末2$ chmod +x count.py
+端末2$ rosrun mypkg count.py
+端末3$ chmod +x twice.py
+端末3S rosrun mypkg twice.py  
+```
+Ctr+cで終了することができます。
+
+---
+
+# パッケージ
+
+・count.py
+初期値n=0で、１秒毎にn+1のデータを投げる
+
+・twice.py
+count.pyからデータを受け取り、それを2倍にしてデータを出力
+
+出力されたデータは以下のコマンドで得られる
+
+```sh
+$ rostopic echo /count_up
+$ rostopic echo /twice
+```
