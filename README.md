@@ -8,7 +8,7 @@ Raspberry Pi 4
 
 # 動作環境
 
-OS:ubuntu 10.04  
+OS:ubuntu 20.04  
 ROS_VERSION:noetic  
 
 ---
