@@ -42,7 +42,6 @@ makeが終わった後、以下のコマンドで実行してください。
 ```
 Ctr+cで終了することができます。
 
----
 
 # パッケージ
 
@@ -52,9 +51,16 @@ Ctr+cで終了することができます。
 ・twice.py
 count.pyからデータを受け取り、それを2倍にしてデータを出力
 
+## データの確認
+
 出力されたデータは以下のコマンドで得られる
 
 ```sh
 $ rostopic echo /count_up
 $ rostopic echo /twice
 ```
+---
+
+# デモ動画
+
+[実行動画](https://www.youtube.com/watch?v=8mPzvCJtwSg)  
