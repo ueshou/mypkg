@@ -32,7 +32,10 @@ $ catkin_make
 # 実行
 
 makeが終わった後、以下のコマンドで実行してください。
-
+実行する端末は、以下のコマンドでscriptsフォルダに移動してから実行してください。
+```sh
+$ cd src/mypkg/mypkg/scripts
+```
 ```sh
 端末1$ roscore
 端末2$ chmod +x count.py
