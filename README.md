@@ -64,3 +64,6 @@ $ rostopic echo /twice
 # デモ動画
 
 [実行動画](https://www.youtube.com/watch?v=8mPzvCJtwSg)  
+
+# ライセンス
+[BSD 3-Clause "New" or "Revised" License](https://github.com/ueshou/mypkg/blob/main/LICENSE)
